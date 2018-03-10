@@ -198,11 +198,12 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
           }
         }
         
@@ -230,13 +231,14 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'            => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -256,13 +258,14 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'            => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -286,13 +289,14 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'            => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -315,13 +319,14 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
             'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'             => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -338,9 +343,10 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-              'pod_name'       => 'fabric8-console-controller-98rqc',
-              'container_name' => 'fabric8-console-container',
-              'namespace_name' => 'default',
+              'pod_name'        => 'fabric8-console-controller-98rqc',
+              'container_name'  => 'fabric8-console-container',
+              'container_image' => 'unknown',
+              'namespace_name'  => 'default',
           }
       }
       assert_equal(expected_kube_metadata, es.instance_variable_get(:@record_array)[0])
@@ -360,11 +366,12 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
           'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
         },
         'kubernetes' => {
-          'pod_name'       => 'fabric8-console-controller-98rqc',
-          'container_name' => 'fabric8-console-container',
-          'namespace_name' => '.orphaned',
+          'pod_name'        => 'fabric8-console-controller-98rqc',
+          'container_name'  => 'fabric8-console-container',
+          'container_image' => 'unknown',
+          'namespace_name'  => '.orphaned',
           'orphaned_namespace' => 'default',
-          'namespace_id' => 'orphaned'
+          'namespace_id'    => 'orphaned'
         }
       }
       assert_equal(expected_kube_metadata, es.instance_variable_get(:@record_array)[0])
@@ -383,9 +390,10 @@ class KubernetesMetadataFilterTest < Test::Unit::TestCase
           'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
         },
         'kubernetes' => {
-          'pod_name'       => 'fabric8-console-controller.98rqc',
-          'container_name' => 'fabric8-console-container',
-          'namespace_name' => 'default'
+          'pod_name'        => 'fabric8-console-controller.98rqc',
+          'container_name'  => 'fabric8-console-container',
+          'container_image' => 'fabric8/hawtio-kubernetes:latest',
+          'namespace_name'  => 'default'
         }
       }
       assert_equal(expected_kube_metadata, es.instance_variable_get(:@record_array)[0])
@@ -504,6 +512,7 @@ use_journal true
             'host'             => 'jimmi-redhat.localnet',
             'pod_name'         => 'fabric8-console-controller-98rqc',
             'container_name'   => 'fabric8-console-container',
+            'container_image'  => 'fabric8/hawtio-kubernetes:latest',
             'namespace_id'     => '898268c8-4a36-11e5-9d81-42010af0194c',
             'namespace_labels' => {
               'kubernetes_io/namespacetest' => 'somevalue'
@@ -537,6 +546,7 @@ use_journal true
             'host'             => 'jimmi-redhat.localnet',
             'pod_name'         => 'fabric8-console-controller-98rqc',
             'container_name'   => 'fabric8-console-container',
+            'container_image'  => 'fabric8/hawtio-kubernetes:latest',
             'namespace_id'     => '898268c8-4a36-11e5-9d81-42010af0194c',
             'namespace_labels' => {
               'kubernetes.io/namespacetest' => 'somevalue'
@@ -581,13 +591,14 @@ use_journal true
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'            => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -618,13 +629,14 @@ use_journal true
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'            => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -647,14 +659,15 @@ use_journal true
                 'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
             },
             'kubernetes' => {
-                'host'           => 'jimmi-redhat.localnet',
-                'pod_name'       => 'fabric8-console-controller-98rqc',
-                'container_name' => 'fabric8-console-container',
-                'namespace_name' => 'default',
-                'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-                'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-                'master_url'     => 'https://localhost:8443',
-                'labels'         => {
+                'host'            => 'jimmi-redhat.localnet',
+                'pod_name'        => 'fabric8-console-controller-98rqc',
+                'container_name'  => 'fabric8-console-container',
+                'container_image' => 'fabric8/hawtio-kubernetes:latest',
+                'namespace_name'  => 'default',
+                'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+                'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+                'master_url'      => 'https://localhost:8443',
+                'labels'          => {
                     'component' => 'fabric8Console'
                 },
                 'annotations'    => {
@@ -687,13 +700,14 @@ use_journal true
               'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
           },
           'kubernetes' => {
-            'host'           => 'jimmi-redhat.localnet',
-            'pod_name'       => 'fabric8-console-controller-98rqc',
-            'container_name' => 'fabric8-console-container',
-            'namespace_name' => 'default',
-            'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-            'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-            'master_url'     => 'https://localhost:8443',
+            'host'            => 'jimmi-redhat.localnet',
+            'pod_name'        => 'fabric8-console-controller-98rqc',
+            'container_name'  => 'fabric8-console-container',
+            'container_image' => 'fabric8/hawtio-kubernetes:latest',
+            'namespace_name'  => 'default',
+            'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+            'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+            'master_url'      => 'https://localhost:8443',
             'labels' => {
               'component' => 'fabric8Console'
             }
@@ -717,14 +731,15 @@ use_journal true
                 'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
             },
             'kubernetes' => {
-                'host'           => 'jimmi-redhat.localnet',
-                'pod_name'       => 'fabric8-console-controller-98rqc',
-                'container_name' => 'fabric8-console-container',
-                'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-                'namespace_name' => 'default',
-                'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-                'master_url'     => 'https://localhost:8443',
-                'labels'         => {
+                'host'            => 'jimmi-redhat.localnet',
+                'pod_name'        => 'fabric8-console-controller-98rqc',
+                'container_name'  => 'fabric8-console-container',
+                'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+                'namespace_name'  => 'default',
+                'container_image' => 'fabric8/hawtio-kubernetes:latest',
+                'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+                'master_url'      => 'https://localhost:8443',
+                'labels'          => {
                     'component' => 'fabric8Console'
                 },
                 'annotations'    => {
@@ -754,14 +769,15 @@ use_journal true
                 'container_id' => '49095a2894da899d3b327c5fde1e056a81376cc9a8f8b09a195f2a92bceed459'
             },
             'kubernetes' => {
-                'host'           => 'jimmi-redhat.localnet',
-                'pod_name'       => 'fabric8-console-controller-98rqc',
-                'container_name' => 'fabric8-console-container',
-                'namespace_id'   => '898268c8-4a36-11e5-9d81-42010af0194c',
-                'namespace_name' => 'default',
-                'pod_id'         => 'c76927af-f563-11e4-b32d-54ee7527188d',
-                'master_url'     => 'https://localhost:8443',
-                'labels'         => {
+                'host'            => 'jimmi-redhat.localnet',
+                'pod_name'        => 'fabric8-console-controller-98rqc',
+                'container_name'  => 'fabric8-console-container',
+                'container_image' => 'fabric8/hawtio-kubernetes:latest',
+                'namespace_id'    => '898268c8-4a36-11e5-9d81-42010af0194c',
+                'namespace_name'  => 'default',
+                'pod_id'          => 'c76927af-f563-11e4-b32d-54ee7527188d',
+                'master_url'      => 'https://localhost:8443',
+                'labels'          => {
                     'component' => 'fabric8Console'
                 }
             }
