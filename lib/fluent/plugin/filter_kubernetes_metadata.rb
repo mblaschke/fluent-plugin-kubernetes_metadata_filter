@@ -258,14 +258,22 @@ module Fluent
     def get_metadata_for_record(match_data, cache_key, create_time, batch_miss_cache)
       namespace_name = match_data['namespace']
       pod_name = match_data['pod_name']
+      container_name = match_data['container_name']
       metadata = {
-        'container_name' => match_data['container_name'],
-        'namespace_name' => namespace_name,
-        'pod_name'       => pod_name
+        'container_name'  => container_name,
+        'namespace_name'  => namespace_name,
+        'pod_name'        => pod_name,
+        'container_image' => 'unknown'
       }
       if @kubernetes_url.present?
         pod_metadata = get_pod_metadata(cache_key, namespace_name, pod_name, create_time, batch_miss_cache)
+
+        if (pod_metadata.include? 'containers') && (pod_metadata['containers'].include? container_name)
+          metadata['container_image'] = pod_metadata['containers'][container_name]['image']
+        end
+
         metadata.merge!(pod_metadata) if pod_metadata
+        metadata.delete('containers')
       end
       metadata
     end

@@ -54,10 +54,19 @@ module KubernetesMetadata
         self.de_dot!(labels)
         self.de_dot!(annotations)
       end
+
+      container_meta = {}
+      pod_object['spec']['containers'].each do|container_spec|
+        container_meta[container_spec['name']] = {
+            'image' => container_spec['image']
+        }
+      end
+
       kubernetes_metadata = {
           'namespace_name' => pod_object['metadata']['namespace'],
           'pod_id'         => pod_object['metadata']['uid'],
           'pod_name'       => pod_object['metadata']['name'],
+          'containers'     => syms_to_strs(container_meta),
           'labels'         => labels,
           'host'           => pod_object['spec']['nodeName'],
           'master_url'     => @kubernetes_url
