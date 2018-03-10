@@ -35,7 +35,14 @@ class DefaultPodWatchStrategyTest < WatchTest
                 'labels' => {},
             },
             'spec' => {
-                'nodeName' => 'aNodeName'
+                'nodeName' => 'aNodeName',
+                'containers' => [{
+                     'name' => 'foo',
+                     'image' => 'bar',
+                 }, {
+                     'name' => 'bar',
+                     'image' => 'foo',
+                 }]
             }
          }
        )
@@ -49,7 +56,14 @@ class DefaultPodWatchStrategyTest < WatchTest
                 'labels' => {},
             },
             'spec' => {
-                'nodeName' => 'aNodeName'
+                'nodeName' => 'aNodeName',
+                'containers' => [{
+                    'name' => 'foo',
+                    'image' => 'bar',
+                 }, {
+                    'name' => 'bar',
+                    'image' => 'foo',
+                 }]
             }
          }
        )
