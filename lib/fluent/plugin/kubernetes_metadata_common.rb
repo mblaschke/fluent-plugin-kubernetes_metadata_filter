@@ -56,9 +56,11 @@ module KubernetesMetadata
       end
 
       container_meta = {}
-      pod_object['spec']['containers'].each do|container_spec|
-        container_meta[container_spec['name']] = {
-            'image' => container_spec['image']
+      pod_object['status']['containerStatuses'].each do|container_status|
+        container_meta[container_status['containerID']] = {
+            'name' => container_status['name'],
+            'image' => container_status['image'],
+            'image_id' => container_status['imageID']
         }
       end
 
