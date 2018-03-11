@@ -273,6 +273,10 @@ module Fluent
           metadata['container_image'] = pod_metadata['containers'][docker_container_id]['image']
         end
 
+        puts "-------------pod_metadata--------------------"
+        puts docker_container_id.inspect
+        puts pod_metadata.inspect
+
         metadata.merge!(pod_metadata) if pod_metadata
         metadata.delete('containers')
       end
