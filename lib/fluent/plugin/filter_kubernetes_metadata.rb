@@ -259,6 +259,7 @@ module Fluent
       namespace_name = match_data['namespace']
       pod_name = match_data['pod_name']
       container_name = match_data['container_name']
+      docker_container_id = 'docker://' + match_data['docker_id']
       metadata = {
         'container_name'  => container_name,
         'namespace_name'  => namespace_name,
@@ -268,8 +269,8 @@ module Fluent
       if @kubernetes_url.present?
         pod_metadata = get_pod_metadata(cache_key, namespace_name, pod_name, create_time, batch_miss_cache)
 
-        if (pod_metadata.include? 'containers') && (pod_metadata['containers'].include? container_name)
-          metadata['container_image'] = pod_metadata['containers'][container_name]['image']
+        if (pod_metadata.include? 'containers') && (pod_metadata['containers'].include? docker_container_id)
+          metadata['container_image'] = pod_metadata['containers'][docker_container_id]['image']
         end
 
         metadata.merge!(pod_metadata) if pod_metadata
