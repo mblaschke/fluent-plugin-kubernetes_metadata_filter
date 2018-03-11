@@ -55,15 +55,9 @@ module KubernetesMetadata
         self.de_dot!(annotations)
       end
 
-      puts "-------------pod_object.status--------------------"
-      puts pod_object['status'].inspect
-
-      puts "-------------pod_object.status.containerStatuses arr--------------------"
-      puts pod_object['status']['containerStatuses'].inspect
-
       container_meta = {}
       pod_object['status']['containerStatuses'].each do|container_status|
-        container_meta[container_spec['containerID']] = {
+        container_meta[container_status['containerID']] = {
             'name' => container_status['name'],
             'image' => container_status['image'],
             'image_id' => container_status['imageID']
