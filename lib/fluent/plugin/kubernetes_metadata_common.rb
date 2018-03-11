@@ -64,9 +64,6 @@ module KubernetesMetadata
         }
       end
 
-      puts "-------------container_meta--------------------"
-      puts container_meta.inspect
-
       kubernetes_metadata = {
           'namespace_name' => pod_object['metadata']['namespace'],
           'pod_id'         => pod_object['metadata']['uid'],
