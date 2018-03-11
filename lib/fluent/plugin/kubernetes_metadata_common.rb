@@ -58,6 +58,9 @@ module KubernetesMetadata
       puts "-------------pod_object.status--------------------"
       puts pod_object['status'].inspect
 
+      puts "-------------pod_object.status.containerStatuses arr--------------------"
+      puts pod_object['status']['containerStatuses'].inspect
+
       container_meta = {}
       pod_object['status']['containerStatuses'].each do|container_status|
         container_meta[container_spec['containerID']] = {
