@@ -267,10 +267,9 @@ module Fluent
       if @kubernetes_url.present?
         pod_metadata = get_pod_metadata(container_id, namespace_name, pod_name, create_time, batch_miss_cache)
 
-        docker_container_id = 'docker://' + container_id
-        if (pod_metadata.include? 'containers') && (pod_metadata['containers'].include? docker_container_id)
-          metadata['container_image'] = pod_metadata['containers'][docker_container_id]['image']
-          metadata['container_image_id'] = pod_metadata['containers'][docker_container_id]['image_id']
+        if (pod_metadata.include? 'containers') && (pod_metadata['containers'].include? container_id)
+          metadata['container_image'] = pod_metadata['containers'][container_id]['image']
+          metadata['container_image_id'] = pod_metadata['containers'][container_id]['image_id']
         end
 
         metadata.merge!(pod_metadata) if pod_metadata
