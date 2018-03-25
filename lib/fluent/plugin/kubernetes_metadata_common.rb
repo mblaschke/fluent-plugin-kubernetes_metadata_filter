@@ -66,9 +66,7 @@ module KubernetesMetadata
           }
         end
       rescue
-        pod_name = pod_object['metadata']['name']
-        namespace_name = pod_object['metadata']['namespace']
-        log.debug("parsing container meta information failed for: #{namespace_name}/#{pod_name} ")
+        log.debug("parsing container meta information failed for: #{pod_object['metadata']['namespace']}/#{pod_object['metadata']['name']} ")
       end
 
       kubernetes_metadata = {

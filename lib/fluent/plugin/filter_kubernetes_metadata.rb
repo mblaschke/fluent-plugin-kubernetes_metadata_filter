@@ -262,8 +262,7 @@ module Fluent
       metadata = {
         'container_name'  => container_name,
         'namespace_name'  => namespace_name,
-        'pod_name'        => pod_name,
-        'container_image' => 'unknown'
+        'pod_name'        => pod_name
       }
       if @kubernetes_url.present?
         pod_metadata = get_pod_metadata(container_id, namespace_name, pod_name, create_time, batch_miss_cache)
